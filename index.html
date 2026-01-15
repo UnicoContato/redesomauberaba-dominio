@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="pt-br" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rede Soma Uberaba - Sua Saúde em Primeiro Lugar</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="font-outfit bg-slate-50 text-slate-800 overflow-x-hidden relative">
+
+    <div class="fixed top-0 left-0 w-full h-full overflow-hidden -z-10 pointer-events-none">
+        <div class="blob bg-blue-500 opacity-20 w-96 h-96 rounded-full absolute -top-20 -left-20 blur-3xl animate-pulse-slow"></div>
+        <div class="blob bg-red-500 opacity-20 w-80 h-80 rounded-full absolute bottom-0 right-0 blur-3xl animate-pulse-slow delay-1000"></div>
+    </div>
+
+    <header id="main-header" class="fixed w-full top-0 z-50 transition-all duration-300 py-4 px-6 lg:px-12">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold tracking-tight text-blue-900 flex items-center gap-2">
+                <span class="text-red-600 text-3xl">+</span> REDE SOMA
+            </a>
+            
+            <nav class="hidden md:flex gap-8 items-center text-sm font-semibold text-slate-600">
+                <a href="#inicio" class="hover:text-blue-700 transition-colors">Início</a>
+                <a href="#sobre" class="hover:text-blue-700 transition-colors">Sobre</a>
+                <a href="#servicos" class="hover:text-blue-700 transition-colors">Serviços</a>
+                <a href="#galeria" class="hover:text-blue-700 transition-colors">Galeria</a>
+                <a href="#contato" class="hover:text-blue-700 transition-colors">Contato</a>
+            </nav>
+
+            <a href="https://wa.me/553433322020" target="_blank" class="hidden md:inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white px-5 py-2.5 rounded-full text-sm font-medium transition-all shadow-lg hover:shadow-blue-500/30">
+                <i data-lucide="phone" class="w-4 h-4"></i> (34) 3332-2020
+            </a>
+
+            <button id="menu-btn" class="md:hidden text-slate-800">
+                <i data-lucide="menu" class="w-8 h-8"></i>
+            </button>
+        </div>
+
+        <div id="mobile-menu" class="absolute top-full left-0 w-full glass-strong border-t border-white/20 p-6 flex flex-col gap-4 md:hidden transform scale-y-0 origin-top transition-transform duration-300">
+            <a href="#inicio" class="text-lg font-medium text-slate-700">Início</a>
+            <a href="#sobre" class="text-lg font-medium text-slate-700">Sobre</a>
+            <a href="#servicos" class="text-lg font-medium text-slate-700">Serviços</a>
+            <a href="#galeria" class="text-lg font-medium text-slate-700">Galeria</a>
+            <a href="#contato" class="text-lg font-medium text-slate-700">Contato</a>
+        </div>
+    </header>
+
+    <section id="inicio" class="relative min-h-screen flex items-center justify-center pt-20 overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <div class="absolute inset-0 bg-gradient-to-r from-blue-900/80 to-slate-900/60 z-10"></div>
+            <img src="img/6.jpeg" alt="Fachada Rede Soma" class="w-full h-full object-cover animate-kenburns">
+        </div>
+
+        <div class="relative z-20 container mx-auto px-6 text-center">
+            <span class="inline-block py-1 px-3 rounded-full bg-red-600/20 border border-red-500/30 text-red-200 text-sm font-semibold mb-4 backdrop-blur-md reveal">
+                Bem-vindo à Rede Soma
+            </span>
+            <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight reveal delay-100">
+                Cuidando da sua saúde <br> <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-300">com excelência.</span>
+            </h1>
+            <p class="text-lg md:text-xl text-slate-200 mb-8 max-w-2xl mx-auto reveal delay-200">
+                Medicamentos, perfumaria e atendimento farmacêutico de qualidade sempre perto de você em Uberaba.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center reveal delay-300">
+                <a href="#contato" class="px-8 py-4 bg-red-600 hover:bg-red-700 text-white font-semibold rounded-full shadow-lg shadow-red-600/30 transition-all transform hover:-translate-y-1">
+                    Encontre uma Loja
+                </a>
+                <a href="#servicos" class="px-8 py-4 glass text-white font-semibold rounded-full hover:bg-white/20 transition-all backdrop-blur-md border border-white/30">
+                    Nossos Serviços
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="sobre" class="py-20 bg-white/40 relative">
+        <div class="container mx-auto px-6">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div class="reveal-left">
+                    <h2 class="text-blue-600 font-bold tracking-wide uppercase text-sm mb-2">Sobre Nós</h2>
+                    <h3 class="text-3xl md:text-4xl font-bold text-slate-800 mb-6">Tradição e confiança.</h3>
+                    
+                    <div class="text-slate-600 leading-relaxed space-y-4">
+                        <p>
+                            Nossa história começa em <strong>1986</strong>, com um propósito simples e verdadeiro: cuidar da saúde das pessoas com proximidade, confiança e responsabilidade. Desde o início, acreditamos que uma farmácia vai muito além de vender medicamentos — ela faz parte da rotina, das conquistas e do bem-estar da comunidade.
+                        </p>
+                        <p>
+                            Ao longo dos anos, evoluímos, crescemos e nos fortalecemos, sempre mantendo nossos valores. Anos depois, passamos a fazer parte da <strong>Rede Soma</strong>, unindo nossa essência local à força de uma rede que compartilha do mesmo compromisso com qualidade, credibilidade e inovação.
+                        </p>
+                        <p>
+                            Atualmente, contamos com <strong>7 lojas</strong> espalhadas pela cidade de Uberaba, sempre próximas de você, para garantir acesso facilitado a medicamentos, produtos de qualidade e um atendimento de confiança.
+                        </p>
+                        <p>
+                            Hoje, nosso principal objetivo é claro: oferecer economia sem abrir mão da saúde. Trabalhamos diariamente para garantir preços justos, acesso a bons produtos e um atendimento humano, porque acreditamos que cuidar da saúde deve ser possível para todos.
+                        </p>
+                        <p class="font-medium text-blue-800">
+                            Seguimos em frente, com o mesmo cuidado de sempre e com o olhar voltado para o futuro, colocando você e sua família sempre em primeiro lugar.
+                        </p>
+                    </div>
+                </div>
+                <div class="relative reveal-right mt-8 lg:mt-0">
+                    <div class="absolute inset-0 bg-gradient-to-tr from-blue-600 to-red-500 rounded-3xl transform rotate-3 opacity-20 blur-lg"></div>
+                    <img src="img/3.jpeg" alt="Interior Loja" class="relative rounded-3xl shadow-2xl w-full object-cover h-[500px] border-4 border-white/50">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="servicos" class="py-20 relative">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16 reveal">
+                <h2 class="text-blue-600 font-bold tracking-wide uppercase text-sm mb-2">O que oferecemos</h2>
+                <h3 class="text-3xl md:text-4xl font-bold text-slate-800">Serviços Completos</h3>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="glass-card p-8 rounded-2xl hover-float reveal delay-100 group">
+                    <div class="w-14 h-14 bg-blue-100 rounded-full flex items-center justify-center text-blue-600 mb-6 group-hover:bg-blue-600 group-hover:text-white transition-colors">
+                        <i data-lucide="pill" class="w-7 h-7"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-slate-800 mb-3">Farmácia Completa</h4>
+                    <p class="text-slate-600">
+                        Amplo estoque de medicamentos éticos, genéricos e similares. Garantia de procedência e farmacêutico sempre à disposição.
+                    </p>
+                </div>
+
+                <div class="glass-card p-8 rounded-2xl hover-float reveal delay-200 group">
+                    <div class="w-14 h-14 bg-red-100 rounded-full flex items-center justify-center text-red-600 mb-6 group-hover:bg-red-600 group-hover:text-white transition-colors">
+                        <i data-lucide="sparkles" class="w-7 h-7"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-slate-800 mb-3">Perfumaria e Beleza</h4>
+                    <p class="text-slate-600">
+                        As melhores marcas de dermocosméticos, higiene pessoal e beleza. Tudo para você se cuidar com carinho e economia.
+                    </p>
+                </div>
+
+                <div class="glass-card p-8 rounded-2xl hover-float reveal delay-300 group">
+                    <div class="w-14 h-14 bg-green-100 rounded-full flex items-center justify-center text-green-600 mb-6 group-hover:bg-green-600 group-hover:text-white transition-colors">
+                        <i data-lucide="truck" class="w-7 h-7"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-slate-800 mb-3">Delivery Rápido</h4>
+                    <p class="text-slate-600">
+                        Serviço de entrega em toda Uberaba. Receba seus medicamentos e produtos no conforto da sua casa com agilidade.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="galeria" class="py-20 bg-slate-100/50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12 reveal">
+                <h3 class="text-3xl md:text-4xl font-bold text-slate-800">Nossas Lojas</h3>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+                <div class="overflow-hidden rounded-xl h-64 reveal">
+                    <img src="img/1.jpeg" alt="Loja 1" class="w-full h-full object-cover transition-transform duration-500 hover:scale-110">
+                </div>
+                <div class="overflow-hidden rounded-xl h-64 reveal delay-100">
+                    <img src="img/2.jpeg" alt="Loja 2" class="w-full h-full object-cover transition-transform duration-500 hover:scale-110">
+                </div>
+                <div class="overflow-hidden rounded-xl h-64 reveal delay-200">
+                    <img src="img/3.jpeg" alt="Loja 3" class="w-full h-full object-cover transition-transform duration-500 hover:scale-110">
+                </div>
+                <div class="overflow-hidden rounded-xl h-64 reveal delay-300">
+                    <img src="img/4.jpeg" alt="Loja 4" class="w-full h-full object-cover transition-transform duration-500 hover:scale-110">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato" class="py-20 relative overflow-hidden">
+        <div class="container mx-auto px-6 relative z-10">
+            <div class="text-center mb-10">
+                <h3 class="text-3xl font-bold text-slate-800 mb-2">Visite Nossas Unidades</h3>
+                <p class="text-slate-600">Selecione uma loja para ver as informações</p>
+            </div>
+
+            <div class="glass-panel max-w-6xl mx-auto rounded-3xl overflow-hidden shadow-2xl border border-white/40 bg-white/60 backdrop-blur-xl flex flex-col lg:flex-row">
+                
+                <div class="p-8 lg:p-10 lg:w-1/2 flex flex-col">
+                    
+                    <div class="flex flex-wrap gap-2 mb-8" id="unit-buttons-container">
+                        <button onclick="setUnit(0)" class="unit-btn active px-4 py-2 rounded-full text-sm font-semibold transition-all border border-blue-200 hover:border-blue-400">
+                            Santa Maria
+                        </button>
+                        <button onclick="setUnit(1)" class="unit-btn px-4 py-2 rounded-full text-sm font-semibold transition-all border border-blue-200 hover:border-blue-400">
+                            Fabricio
+                        </button>
+                        <button onclick="setUnit(2)" class="unit-btn px-4 py-2 rounded-full text-sm font-semibold transition-all border border-blue-200 hover:border-blue-400">
+                            São Cristóvão
+                        </button>
+                        <button onclick="setUnit(3)" class="unit-btn px-4 py-2 rounded-full text-sm font-semibold transition-all border border-blue-200 hover:border-blue-400">
+                            Amoroso Costa
+                        </button>
+                    </div>
+
+                    <div id="contact-info" class="space-y-8 transition-opacity duration-300">
+                        <div>
+                            <h4 class="text-2xl font-bold text-blue-900 mb-1" id="unit-name">Unidade Santa Maria</h4>
+                            <p class="text-slate-500 text-sm">Aberta para cuidar de você.</p>
+                        </div>
+
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center text-blue-600 shrink-0 shadow-sm">
+                                <i data-lucide="map-pin" class="w-6 h-6"></i>
+                            </div>
+                            <div>
+                                <h5 class="font-bold text-slate-800 text-lg">Endereço</h5>
+                                <p class="text-slate-600" id="addr-text">Av. Santa Beatriz da Silva, 1000 - Loja 1047</p>
+                                <p class="text-slate-500 text-sm mt-1" id="bairro-text">Bairro Santa Maria - Uberaba/MG</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center text-green-600 shrink-0 shadow-sm">
+                                <i data-lucide="phone-call" class="w-6 h-6"></i>
+                            </div>
+                            <div>
+                                <h5 class="font-bold text-slate-800 text-lg">Contato</h5>
+                                <p class="text-slate-600" id="phone-text">(34) 3332-2020</p>
+                                <p class="text-slate-500 text-sm mt-1">redesomauberaba@gmail.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lg:w-1/2 h-80 lg:h-auto bg-slate-200 relative min-h-[400px]">
+                    <iframe id="map-frame" 
+                        src="https://maps.google.com/maps?q=Av.+Santa+Beatriz+da+Silva,+1000+-+Santa+Maria,+Uberaba+-+MG&t=&z=15&ie=UTF8&iwloc=&output=embed" 
+                        width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-slate-900 text-slate-400 py-10 border-t border-slate-800">
+        <div class="container mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-6">
+            <div class="text-center md:text-left">
+                <h4 class="text-white font-bold text-xl mb-1">REDE SOMA</h4>
+                <p class="text-sm">Excelência em farmácia.</p>
+            </div>
+            <div class="text-center md:text-right text-sm">
+                <p>© 2026 Rede Soma Uberaba. Todos os direitos reservados.</p>
+                <button id="open-privacy" class="hover:text-blue-400 transition-colors mt-2">Política de Privacidade</button>
+            </div>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/553433322020" target="_blank" class="fixed bottom-6 right-6 z-50 bg-green-500 hover:bg-green-600 text-white w-14 h-14 rounded-full flex items-center justify-center shadow-lg hover:shadow-green-500/50 transition-all animate-bounce-slow cursor-pointer">
+        <i data-lucide="message-circle" class="w-8 h-8 fill-current"></i>
+    </a>
+
+    <div id="modal-privacy" class="fixed inset-0 z-[60] hidden">
+        <div class="absolute inset-0 bg-slate-900/60 backdrop-blur-sm" id="close-modal-bg"></div>
+        <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-11/12 max-w-lg bg-white rounded-2xl shadow-2xl p-8 opacity-0 scale-95 transition-all duration-300" id="modal-content">
+            <h3 class="text-2xl font-bold text-slate-800 mb-4">Política de Privacidade</h3>
+            <div class="h-64 overflow-y-auto pr-2 text-slate-600 text-sm space-y-3 custom-scrollbar">
+                <p>A Rede Soma valoriza a privacidade de seus clientes. Esta política descreve como coletamos e usamos informações.</p>
+                <p><strong>1. Coleta de Dados:</strong> Coletamos apenas dados necessários para contato e prestação de serviços farmacêuticos.</p>
+                <p><strong>2. Uso das Informações:</strong> As informações não são compartilhadas com terceiros, exceto quando exigido por lei.</p>
+                <p><strong>3. Segurança:</strong> Adotamos medidas técnicas para proteger seus dados pessoais.</p>
+                <p><strong>4. Contato:</strong> Para dúvidas sobre seus dados, entre em contato via telefone ou e-mail institucional.</p>
+            </div>
+            <div class="mt-6 flex justify-end">
+                <button id="close-modal-btn" class="px-6 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-lg font-medium transition-colors">Fechar</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
