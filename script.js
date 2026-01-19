@@ -92,7 +92,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 const units = [
     {
-        name: "Unidade 1 - Santa Maria",
+        name: "Unidade - Santa Maria",
         address: "Av. Santa Beatriz da Silva, 1000 - Loja 1047",
         district: "Bairro Santa Maria",
         phone: "(34) 3332-2020",
