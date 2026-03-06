@@ -92,32 +92,67 @@ document.addEventListener('DOMContentLoaded', () => {
 
 const units = [
     {
-        name: "Unidade - Santa Maria",
+        name: "Unidade - Moreira",
+        razao: "DROGARIA MOREIRA DE UBERABA LTDA", 
+        cnpj: "08.896.228.0001-13",
+        address: "Avenida Guarapuava, 545",
+        district: "Conjunto Jose Vallim de Melo",
+        phone: "(34) 3314-6000 | (34) 99690-2820",
+        mapQuery: "Av.+Guarapuava+,+545+-+Conjunto+Jose+Vallim+de+Melo,+Uberaba+-+MG"
+    },
+    {
+        name: "Unidade - Lourdes",
+        razao: "DROGARIA DROGALURDES DE UBERABA LTDA", 
+        cnpj: "19.346.618/0001-36",
+        address: "Avenida Padre Eddie Bernardes Silva, 531",
+        district: "Lourdes",
+        phone: "(34) 3315-0659 | (34) 99894-9353 | (34) 99149-4584 | (34) 99767-3363",
+        mapQuery: "Av.+Padre+Eddie+Bernardes+Silva,+531+-+Lourdes,+Uberaba+-+MG"
+    },
+    {
+        name: "Unidade - Narciso",
+        razao: "DROGARIA NARCISO LTDA", 
+        cnpj: "26.305.953/0001-51",
+        address: "Av. Djalma Castro Alves, 372",
+        district: "Bairro Amoroso Costa",
+        phone: "(34) 3317-1846 | (34) 99636-4120",
+        mapQuery: "Av.+Djalma+Castro+Alves,+372+-+Amoroso+Costa,+Uberaba+-+MG"
+    },
+    {
+        name: "Unidade - MRA",
+        razao: "MRA DROGARIAS LTDA", 
+        cnpj: "36.861.285/0001-00",
         address: "Av. Santa Beatriz da Silva, 1000 - Loja 1047",
         district: "Bairro Santa Maria",
-        phone: "(34) 3332-2020",
+        phone: "(34) 3314-1122",
         mapQuery: "Av.+Santa+Beatriz+da+Silva,+1000+-+Santa+Maria,+Uberaba+-+MG"
     },
     {
-        name: "Unidade - Fabricio",
+        name: "Unidade - Pacaembu",
+        razao: "FAM DROGARIAS LTDA", 
+        cnpj: "24.542.696/0001-46",
+        address: "Avenida Americo Pessato, 857",
+        district: "Pacaembu",
+        phone: "(34) 3336-4096 | (34) 99635-1516",
+        mapQuery: "Av.+Americo+Pessato,+857+-+Pacaembu,+Uberaba+-+MG"
+    },
+    {
+        name: "Unidade - Santa Rita",
+        razao: "DROGARIA SANTA RITA DE UBERABA LTDA", 
+        cnpj: "21.689.435/0001-65",
         address: "Av. Lucas Borges, 573",
         district: "Bairro Fabricio",
-        phone: "(34) 3332-2020",
+        phone: "(34) 99771-1929",
         mapQuery: "Av.+Lucas+Borges,+573+-+Fabrício,+Uberaba+-+MG"
     },
     {
-        name: "Unidade - São Cristóvão",
+        name: "Unidade - MultiDrogas",
+        razao: "DROGARIA MULTIDROGAS DE UBERABA LTDA", 
+        cnpj: "07.791.995/0001-03",
         address: "Av. Deputado José Marcus Cherem, 1010",
         district: "Vila São Cristóvão",
-        phone: "(34) 3332-2020",
+        phone: "(34) 3318-1010 | (34) 99683-8457 | (34) 99707-7181",
         mapQuery: "Av.+Deputado+José+Marcus+Cherem,+1010+-+Vila+São+Cristóvão,+Uberaba+-+MG"
-    },
-    {
-        name: "Unidade - Amoroso Costa",
-        address: "Av. Djalma Castro Alves, 372",
-        district: "Bairro Amoroso Costa",
-        phone: "(34) 3332-2020",
-        mapQuery: "Av.+Djalma+Castro+Alves,+372+-+Amoroso+Costa,+Uberaba+-+MG"
     }
 ];
 
@@ -125,6 +160,8 @@ function setUnit(index) {
     const unit = units[index];
     const infoContainer = document.getElementById('contact-info');
     const unitName = document.getElementById('unit-name');
+    const unitRazao = document.getElementById('unit-razao');
+    const unitCnpj = document.getElementById('unit-cnpj');
     const addrText = document.getElementById('addr-text');
     const bairroText = document.getElementById('bairro-text');
     const phoneText = document.getElementById('phone-text');
@@ -143,6 +180,8 @@ function setUnit(index) {
     
     setTimeout(() => {
         unitName.textContent = unit.name;
+        unitCnpj.textContent = unit.cnpj;
+        unitRazao.textContent = unit.razao;
         addrText.textContent = unit.address;
         bairroText.textContent = unit.district;
         phoneText.textContent = unit.phone;
